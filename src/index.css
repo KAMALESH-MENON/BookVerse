@@ -135,7 +135,8 @@ img{
 
   }
   
-  section{
+  section > h2{
     margin-top: 2rem;
   }
+  
 }
