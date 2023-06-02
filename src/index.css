@@ -12,11 +12,12 @@
 }
 
 :root{
-    --color-bg: #1f1f38;
+    --color-bg: white;
     --color-bg-variant: #2c2c6c;
-    --color-primary: #4db5ff;
-    --color-primary-variant: rgba(77,181,255,0.4);
+    --color-primary: black;
+    --color-primary-variant: black;
     --color-white: #fff;
+    --color-black: black;
     --color-light: rgba(255,255,255,0.6);
 
     --transition: all 400ms ease;
@@ -40,7 +41,7 @@ body{
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url(../src/assets/bg-texture.png);
+  
 }
 
 /*=========== GENERAL STYLES ============*/
@@ -59,8 +60,8 @@ h1{
 }
 
 section{
-  margin-top: 8rem;
   height: 100vh;
+  background-color: white;
 }
 
 section > h2, section > h5{
@@ -83,7 +84,7 @@ a{
 }
 
 a:hover{
-  color: var(--color-white);
+  color: var(--color-black);
 }
 
 .btn{

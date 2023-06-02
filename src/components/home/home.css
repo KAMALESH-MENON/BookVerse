@@ -1,0 +1,33 @@
+header{
+    height: max-content;
+    padding-top: 7rem;
+    overflow: hidden;
+    background-color: black;
+}
+
+.header_container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    header{
+        height: 100vh;
+    }
+}
+
+/*========= MEDIA QUERIES(SMALL DEVICES) ========*/
+
+@media screen and (max-width: 600px) {
+    header{
+        height: 100vh;
+    }
+
+    .header_socials, .scroll_down{
+        display: none;
+    }
+}
+

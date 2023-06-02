@@ -1,26 +1,22 @@
 import React from 'react'
-import Header from './components/header/Header'
 import Nav from './components/nav/Nav'
+import Home from './components/home/Home'
+import NewArrival from './components/newArrival/NewArrival'
+import Browse from './components/browse/Browse'
 import About from './components/about/About'
-import Experience from './components/experience/Experience'
-import Services from './components/services/Services'
-import Portfolio from './components/portfolio/Portfolio'
-import Testimonials from './components/testimonials/Testimonials'
-import Contact from './components/contact/Contact'
-import Footer from './components/footer/Footer'
 
 const App = () => {
+  const handleSearch = (searchTerm) => {
+    // Handle the search functionality here
+    console.log('Search term:', searchTerm);
+  };
   return (
     <>
-      <Header />
       <Nav />
+      <Home />
+      <NewArrival />
+      <Browse />
       <About />
-      <Experience />
-      <Services />
-      <Portfolio />
-      <Testimonials />
-      <Contact />
-      <Footer />
     </>
   )
 }
