@@ -8,9 +8,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  /* Updated width to use viewport width */
   height: 100vh;
-  /* Updated height to use viewport height */
   background-image: url("../../assets/p3.png");
   background-repeat: no-repeat;
   background-size: cover;
