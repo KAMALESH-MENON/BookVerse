@@ -1,5 +1,42 @@
-.about_container{
-    display: grid;
-    grid-template-columns: 35% 50%;
-    gap: 15%;
+#about {
+    padding: 2rem;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.left-side {
+    width: 100%;
+    text-align: center;
+}
+
+.right-side {
+    margin-left: 2rem;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }

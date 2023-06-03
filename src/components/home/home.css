@@ -1,33 +1,141 @@
-header{
-    height: max-content;
-    padding-top: 7rem;
-    overflow: hidden;
-    background-color: black;
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: black;
 }
 
-.header_container{
-    text-align: center;
-    height: 100%;
-    position: relative;
+.header_container {
+  text-align: center;
+  height: 100vh;
+  position: relative;
 }
 
+.headerContainer {
+  position: relative;
+}
 
+.leftText {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: 'Libre Franklin Black', sans-serif;
+  transition: opacity 0.5s ease;
+}
+
+.leftText.fadeOut {
+  opacity: 0;
+}
+
+.tagline {
+  padding-left: 150px;
+  font-size: 150px;
+  background-image: linear-gradient(to right, #f4f1d0, #ffffff, #f4f1d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Libre Franklin Black', sans-serif;
+  font-weight: bold;
+  text-shadow: 0px 0px 4px white;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: rgb(187, 187, 187);
+}
+
+.motto {
+  padding-left: 150px;
+  font-size: 55px;
+  background-image: linear-gradient(to right, #f4f1d0, #ffffff, #f4f1d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Libre Franklin Black', sans-serif;
+  font-weight: bold;
+  text-shadow: 0px 0px 1px white;
+}
 
 @media screen and (max-width: 1024px) {
-    header{
-        height: 100vh;
-    }
+  header {
+    height: 100vh;
+  }
+
+  .headerContainer {
+    transition: opacity 0.5s ease;
+    opacity: 0;
+  }
+
+  .visible {
+    opacity: 1;
+  }
+
+  .hidden {
+    opacity: 0;
+  }
+
+  .leftText {
+    transition: opacity 0.5s ease;
+    opacity: 0;
+  }
+
+  .fadeIn {
+    opacity: 1;
+  }
+
+  .fadeOut {
+    opacity: 0;
+  }
 }
 
 /*========= MEDIA QUERIES(SMALL DEVICES) ========*/
 
 @media screen and (max-width: 600px) {
-    header{
-        height: 100vh;
-    }
+  header {
+    height: 100vh;
+  }
 
-    .header_socials, .scroll_down{
-        display: none;
-    }
+  .header_socials,
+  .scroll_down {
+    display: none;
+  }
+
+  .tagline {
+    padding-left: 20px;
+    font-size: 80px;
+  }
+
+  .motto {
+    padding-left: 20px;
+    font-size: 30px;
+  }
 }
 
+/*========= MEDIA QUERIES(IPHONE SCREENS) ========*/
+
+@media screen and (max-width: 375px) {
+  .tagline {
+    padding-left: 10px;
+    font-size: 60px;
+  }
+
+  .motto {
+    padding-left: 10px;
+    font-size: 20px;
+  }
+}
+
+/*========= MEDIA QUERIES(ANDROID SCREENS) ========*/
+
+@media screen and (max-width: 360px) {
+  .tagline {
+    padding-left: 5px;
+    font-size: 50px;
+  }
+
+  .motto {
+    padding-left: 5px;
+    font-size: 15px;
+  }
+}

@@ -64,6 +64,10 @@ section{
   background-color: white;
 }
 
+.gap{
+  padding-top: 10rem;
+}
+
 section > h2, section > h5{
   text-align: center;
   color: var(--color-light);

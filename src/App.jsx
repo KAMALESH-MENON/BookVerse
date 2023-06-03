@@ -5,6 +5,7 @@ import NewArrival from './components/newArrival/NewArrival'
 import Browse from './components/browse/Browse'
 import About from './components/about/About'
 
+
 const App = () => {
   const handleSearch = (searchTerm) => {
     // Handle the search functionality here

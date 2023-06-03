@@ -12,9 +12,11 @@ nav{
 .leftside{
     padding: 1% 0 0 1%;
     flex: 30%;
-    margin-right: 5%;
+    margin: 0 0.5% 0.5% 0;
 }
 .rightside {
+    display: flex;
+    justify-content: flex-end;
     padding: 1% 0 0 10%;
     flex: 70%;
     border: 5px solid;
@@ -22,6 +24,7 @@ nav{
     width: 50%;
     padding: 10px;
 }
+
 a{
     margin-right: 3rem;
     padding: 1% 1%;
@@ -29,6 +32,7 @@ a{
 .logo{
     box-sizing: border-box;
     color: black;
+    
 }
 nav a ul li{
    
@@ -39,12 +43,17 @@ nav a ul li{
     color: black;
     display: inline-block;
     color: var(--color-light);
-    font-size: 1.1rem;
+    font-size: 2rem;
     padding: 10px 20px;
 }
 
 .search{
+  padding: 0;
+  margin: 0;
     background-color: aliceblue;
+    display: flex;
+    justify-content: flex-end;
+
 }
 nav a:hover{
     background: rgba(0, 0, 0 , 0.3);
@@ -67,6 +76,7 @@ nav a.active {
     }
     .rightside{
         display: none;
+        justify-content: right;
     }
     .rightside div{
         align: center;
@@ -113,8 +123,13 @@ nav a.active {
     .mobile-menu-link ul li:first-child {
       transition-delay: 0.2s;
     }
+    .search{
+      display: none;
+    }
     .hamburger-menu {
-        display: block;
+    
+        display: flex;
+        justify-content: flex-end;
         font-size: 2.5rem;
         align: center;
         border: 5px solid;
@@ -136,7 +151,8 @@ nav a.active {
       height: 6rem;
     }
     .hamburger-menu {
-        display: block;
+         display: flex;
+        justify-content: flex-end;
         font-size: 2.5rem;
         align: center;
         border: 5px solid;
@@ -161,8 +177,14 @@ nav a.active {
       font-size: 2rem;
     }
     .hamburger-menu {
-        display: block;
-        font-size: 2.5rem;
+      display: flex;
+      justify-content: flex-end;
+      font-size: 2.5rem;
+      align: center;
+      border: 5px solid;
+      margin: auto;
+      width: 50%;
+      padding: 10px;
       }
     
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import './nav.css'
-import SearchBox from './SearchBox.jsx';
+import SearchBox from './SearchBox';
 import {GiHamburgerMenu} from "react-icons/gi"
 
 import { useState } from 'react'
@@ -28,10 +28,9 @@ const Nav = () => {
       <a href="#newArrival" onClick={()=> setActiveNav('#newArrival')} className={activeNav === '#about' ? 'active' : ''}>New Arrival</a>
       <a href="#browse" onClick={()=> setActiveNav('#browse')} className={activeNav === '#experience' ? 'active' : ''}>Browse</a>
       <a href="#about" onClick={()=> setActiveNav('#about')} className={activeNav === '#services' ? 'active' : ''}>About us</a>
+      <a  href=""><SearchBox /></a>
       </div>
-      <div className='search'>
-        <a href='#'><SearchBox onSearch={handleSearch} /></a> 
-      </div>
+  
       <div className='hamburger-menu'>
         <a href="#"><GiHamburgerMenu /></a>
       </div>
