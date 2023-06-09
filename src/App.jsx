@@ -7,10 +7,6 @@ import About from './components/about/About'
 
 
 const App = () => {
-  const handleSearch = (searchTerm) => {
-    // Handle the search functionality here
-    console.log('Search term:', searchTerm);
-  };
   return (
     <>
       <Nav />
