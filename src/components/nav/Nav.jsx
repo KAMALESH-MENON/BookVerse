@@ -28,7 +28,7 @@ const Nav = () => {
       <a href="#newArrival" onClick={()=> setActiveNav('#newArrival')} className={activeNav === '#about' ? 'active' : ''}>New Arrival</a>
       <a href="#browse" onClick={()=> setActiveNav('#browse')} className={activeNav === '#experience' ? 'active' : ''}>Browse</a>
       <a href="#about" onClick={()=> setActiveNav('#about')} className={activeNav === '#services' ? 'active' : ''}>About us</a>
-      <a  href=""><SearchBox /></a>
+      <a href="#"><SearchBox /></a>
       </div>
   
       <div className='hamburger-menu'>

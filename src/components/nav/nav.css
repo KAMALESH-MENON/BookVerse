@@ -8,6 +8,10 @@ nav{
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
 .leftside{
     padding: 1% 0 0 1%;

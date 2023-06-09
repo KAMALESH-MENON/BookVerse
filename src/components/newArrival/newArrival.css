@@ -20,7 +20,11 @@
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
-  }
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+}
   
   .card-overlay {
     position: absolute;
